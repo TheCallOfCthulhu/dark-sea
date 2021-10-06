@@ -1,0 +1,23 @@
+
+public class DveD {
+
+	public static void main(String[] args) {
+		int pole [][] = new int [10][10];
+		
+		/*doplneni hodnot*/
+		for (int radek = 0; radek < pole.length; radek++) {
+			for (int sloupec = 0; sloupec < pole[radek].length; sloupec++) {
+				System.out.print(pole[radek] [sloupec]);
+				pole [radek][sloupec] = 3
+		
+		for (int radek = 0; radek < pole.length; radek++) {
+			for (int sloupec = 0; sloupec < pole[radek].length; sloupec++) {
+				System.out.print(pole[radek] [sloupec]);
+				
+			}
+			System.out.println();
+		}
+
+	}
+
+}

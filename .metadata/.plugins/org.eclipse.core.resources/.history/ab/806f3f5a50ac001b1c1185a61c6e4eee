@@ -1,0 +1,62 @@
+
+
+/////////////////////////////////////////////////
+class Task1 extends Thread { //povine extednuje Thread
+	
+	public void run () { //povinny nazev
+	System.out.println("START TASK1");
+	for (int i = 0; i <100; i++) {
+		System.out.println(i);
+	}
+
+	System.out.println("KONEC TASK1");
+	}
+}
+
+//////////////////////////////////////////////////
+class Task2 implements Runnable {
+	
+	public void run () {
+		System.out.println("START TASK2");
+	
+	//TASK2
+	for (int i = 200; i <299; i++) {
+		System.out.println(i);
+	}
+	System.out.println("KONEC TASK2");
+}
+}
+///////////////////////////////////////////////////
+
+
+public class TheThread {
+	
+	
+	
+
+	public static void main(String[] args) throws InterruptedException {
+
+		Task1 task1 = new Task1();
+		task1.setPriority(10); //urcuje se priorita
+		task1.start(); //timhle se spousti paralelni metoda
+		
+		//TASK1
+		Task2 task2 = new Task2();
+		Thread taskTwothread = new Thread(task2);
+		taskTwothread.start();
+		
+		
+		task1.join(); //dokud nebude cela metoda task1 nepokracuj dale
+		
+		System.out.println("START TASK3");
+		for (int i = 300; i <399; i++) {
+			System.out.println(i);
+		}
+		//TASK3
+		System.out.println("KONEC TASK3");
+		
+		
+		
+	}
+
+}

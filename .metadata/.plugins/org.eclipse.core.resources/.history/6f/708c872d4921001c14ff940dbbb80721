@@ -1,0 +1,25 @@
+package rapture.city;
+
+public class Hraci {
+	
+	String jmeno;
+	int [] kostky;
+	
+	
+	public Hraci(String jmeno, int[] kostky) {
+		super();
+		this.jmeno = jmeno;
+		this.kostky = kostky;
+	}
+	
+	public int sectiKostky (int [] pole, int cislo) {
+	for (int policko:pole) {
+		if (policko==cislo) {
+			cislo=cislo++;}
+					}
+		return cislo;
+	}
+	
+
+
+}

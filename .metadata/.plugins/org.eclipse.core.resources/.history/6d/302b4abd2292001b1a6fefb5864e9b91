@@ -1,0 +1,75 @@
+
+import java.util.Scanner;
+
+public class TheGame2 {
+
+	public static void main(String[] args) {
+		
+		char [][] plocha = new char [11][11];
+		
+		int hracradek = 5;
+		int hracsloupec = 5;
+		int hrac = 3;
+		
+		Scanner scan2 = new Scanner (System.in);
+		
+		/*doplneni hodnot*/
+		for (int radek = 0; radek < plocha.length; radek++) {
+			for (int sloupec = 0; sloupec < plocha[radek].length; sloupec++) {
+				
+				plocha [radek][sloupec] = 3;
+			}
+		}
+		
+		do {
+		for (radek = 0; radek < plocha.length; radek++) {
+			System.out.print(plocha[radek] + " ");
+	}
+		
+		System.out.println("   \n" + "Zmackni: \n\n" + "1 pro krok doleva \n" + "2 pro krok doprava \n" + "0 konec hry \n");
+		
+		
+		
+			x = scan2.nextInt();
+			
+			System.out.println(x);
+			
+					
+		 if (x == 1) {
+			plocha[hrac] = '-';
+			hrac  = hrac -1;
+			if (hrac < 0) {
+				hrac =0;
+			}
+			plocha[hrac] = 'X';
+			
+			}
+			
+		
+			
+			if (x == 2) {
+				plocha[hrac] = '-';
+				hrac  = hrac +1;
+				if (hrac > 6) {
+					hrac = 6;
+				}
+				plocha[hrac] = 'X';
+								}
+				
+			
+		
+			} while (x !=0);
+		
+		System.out.print("hra konci");
+	
+		
+		
+		
+		
+		
+		
+	}
+	
+}
+
+

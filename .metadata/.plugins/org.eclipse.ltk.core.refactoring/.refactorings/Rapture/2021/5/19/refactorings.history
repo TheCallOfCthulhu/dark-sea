@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Tobis&apos; to &apos;Agule&apos;&#x0D;&#x0A;- Original project: &apos;Rapture&apos;&#x0D;&#x0A;- Original element: &apos;Tobis&apos;&#x0D;&#x0A;- Renamed element: &apos;Agule&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Tobis&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Tobis.java[Tobis" matchStrategy="1" name="Agule" qualified="false" references="true" similarDeclarations="false" stamp="1620657452497" textual="false" version="1.0"/>
+</session>

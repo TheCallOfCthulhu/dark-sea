@@ -1,0 +1,30 @@
+package zoo.zlin;
+
+public class Zralok extends Zvire implements Ryby{
+	
+	int ploutve = 10;
+
+	public Zralok(String nazev, int velikost, String lokace) {
+		super(nazev, velikost, lokace);
+		
+	}
+
+	public void Pohyb () {
+		System.out.println("Zralok plave");
+	}
+
+	public void SpecialInfo() {
+		System.out.println(nazev + " obcas zere lidi");
+		
+	}
+
+
+	public void KolikPloutvi() {
+		if (ploutve >= MaxPloutvi) {
+			System.out.println(ErrorMSG);
+	} else {
+		System.out.println(nazev + " ma 5 ploutvi");
+	}
+	}
+	
+}

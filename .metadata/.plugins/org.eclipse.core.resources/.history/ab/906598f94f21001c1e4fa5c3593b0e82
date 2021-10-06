@@ -1,0 +1,25 @@
+package rapture.city;
+
+public class Hraci {
+	
+	String jmeno;
+	int [] pocetKostek = [5];
+	
+	
+	public Hraci(String jmeno) {
+		super();
+		this.jmeno = jmeno;
+		
+	}
+	
+	public int sectiKostky (int [] pole, int cislo) {
+	for (int policko:pole) {
+		if (policko==cislo) {
+			cislo=cislo++;}
+					}
+		return cislo;
+	}
+	
+
+
+}

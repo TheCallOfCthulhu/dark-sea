@@ -1,0 +1,23 @@
+
+public class LambaEx {
+	
+	
+	
+	public static int secti (int x) {
+		x = x+5;
+		return x;
+	}
+	
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+	
+		// TODO Auto-generated method stub
+		System.out.println(secti(5));
+
+	}
+
+}

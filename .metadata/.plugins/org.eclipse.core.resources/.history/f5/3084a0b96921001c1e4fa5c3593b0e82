@@ -1,0 +1,190 @@
+package rapture.city;
+
+import java.util.Random;
+import java.util.Scanner;
+
+
+
+public class ProlhanyKostky extends Thread{
+	
+	static Random rd = new Random ();
+	
+	 
+	
+	
+	
+	String cislo;
+	
+	private static String rekniPocet(int cislo) {
+		switch (cislo) {
+		case 1: return "jedna";
+		case 2: return "dvì";
+		case 3: return "tøi";
+		case 4: return "ètyøi";
+		case 5: return "pìt";
+		case 6: return "šest";
+		default: return "nula";
+		}
+			}
+	
+	private static String rekniHodnotu(int cislo, int cislo2) {
+		
+		if (cislo2 ==1 ) {
+		switch (cislo) {
+		case 1: return "jednièka";
+		case 2: return "dvojka";
+		case 3: return "trojka";
+		case 4: return "ètyøka";
+		case 5: return "pìtka";
+		case 6: return "šestka";
+		default: return "nula";
+		}
+		} else if (cislo2>=2 && cislo2 <=4) {
+		switch (cislo) {
+		case 1: return "jednièky";
+		case 2: return "dvojky";
+		case 3: return "trojky";
+		case 4: return "ètyøky";
+		case 5: return "pìtky";
+		case 6: return "šestky";
+		default: return "nula";
+		}
+		} else {
+		
+		switch (cislo) {
+		case 1: return "jednièek";
+		case 2: return "dvojek";
+		case 3: return "trojek";
+		case 4: return "ètyøek";
+		case 5: return "pìtek";
+		case 6: return "šestek";
+		default: return "nula";
+		}
+		}
+		
+	}
+	
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		int zadanaHodnota = 0;
+		int zadanyPocet = 0;
+		int celkovyPocet = 0;
+		
+		int vstup1;
+		
+		
+
+		Scanner sc = new Scanner (System.in);
+
+				
+		
+		Hraci hrac1 = new Hraci ("Ty", 5); 
+		Hraci hrac2 = new Hraci ("Kamil", 5); 
+		
+		int veris = 1;
+		
+		hrac1.generuj();
+		hrac2.generuj();
+
+		
+System.out.println("P R O L H A N İ   K O S T K Y\n");
+		
+		
+		do {
+		System.out.println("Jsi na øadì. Zadej hodnotu kostky.");
+		
+		//vstup a overeni hodnoty
+			do {
+					vstup1 = sc.nextInt();
+					if (zadanaHodnota <= vstup1) {
+						zadanaHodnota = vstup1;
+						} else {
+							System.out.println("zadal si nizke cislo. zadej cislo znovu");
+						}
+			} while (vstup1 < zadanaHodnota);
+			
+		System.out.println("Zadej poèet kostek.");
+		
+		//vstup a overeni poctu 
+		do {
+			vstup1 = sc.nextInt();
+			if (zadanyPocet <= vstup1) {
+				zadanyPocet = vstup1;
+				} else {
+					System.out.println("zadal si nizke cislo. zadej cislo znovu");
+				}
+	} while (vstup1 < zadanyPocet);
+		
+		System.out.println("Øíkáš: " + rekniPocet(zadanyPocet) + " " + rekniHodnotu(zadanaHodnota, zadanyPocet) + "\n");
+		
+		{	System.out.println(hrac1.jmeno + " ...");
+			ProlhanyKostky.sleep(3000);
+		}
+			
+			
+			if (rd.nextBoolean()) {
+								System.out.println("VÌØÍ\n");
+				zadanaHodnota = zadanaHodnota+1;
+				zadanyPocet = zadanyPocet+1;
+				System.out.println(hrac2.jmeno + " øíká: " + rekniPocet(zadanyPocet) + " " + rekniHodnotu(zadanaHodnota, zadanyPocet) + "\n");
+			} else {
+				 ProlhanyKostky.sleep(3000);
+				System.out.println("NEVÌØÍ\n");
+				////pocitani kostek a hodnot
+				for (int policko:hrac1.pole) {
+					if (policko==zadanaHodnota) {
+						celkovyPocet++;
+									}
+						}
+					for (int policko:hrac2.pole) {
+					if (policko==zadanaHodnota) {
+						celkovyPocet++;
+								}
+								}
+					if (zadanyPocet <= celkovyPocet) {
+						System.out.println("NEMA PRAVDU");
+					} else System.out.println("MA PRAVDU");
+					System.out.println(hrac1.jmeno + ": " + hrac1.pole);
+					System.out.println(hrac2.jmeno + ": " + hrac2.pole);
+			}
+			
+			System.out.println("veris nebo neveris?");
+			//zadanaHodnota = sc.nextInt();
+			String clean = sc.nextLine();
+			veris = sc.nextInt();
+			System.out.println(veris);
+		} while (veris == 1);
+		
+		
+		System.out.println(hrac1.jmeno + ": " + hrac1.pole);
+		System.out.println(hrac2.jmeno + ": " + hrac2.pole);
+		
+		
+		for (int policko:hrac1.pole) {
+			if (policko==zadanaHodnota) {
+				celkovyPocet++;
+							}
+				}
+			for (int policko:hrac2.pole) {
+			if (policko==zadanaHodnota) {
+				celkovyPocet++;
+						}
+						}
+		
+		if (zadanyPocet <= celkovyPocet) {
+			System.out.println("NEMAS PRAVDU");
+		} else System.out.println("MAS PRAVDU");
+		
+
+		
+		
+		
+		
+		sc.close();
+		
+		
+		
+	}
+
+}

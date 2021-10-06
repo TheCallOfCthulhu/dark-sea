@@ -1,0 +1,24 @@
+
+public class LambaEx {
+	
+	
+	
+	
+
+	
+	
+	public void vypisHello (ILambda printHello) {
+		printHello.print();
+	}
+	
+
+	public static void main(String[] args) {
+	
+		 ILambda printHello =  () -> System.out.println("hello world");	
+//		 LambaEx lamba = new LambaEx();
+//		 lamba.vypisHello(printHello);
+		 printHello.print();
+
+	}
+
+}

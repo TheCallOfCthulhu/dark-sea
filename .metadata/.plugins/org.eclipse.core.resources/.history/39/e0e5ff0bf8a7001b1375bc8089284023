@@ -1,0 +1,23 @@
+package zoo.zlin;
+
+public class Zoo {
+
+	public static void main(String[] args) {
+	
+		Kapr kapr = new Kapr ("kapr",20,"Akvarium");
+		Zralok zralok = new Zralok ("zralok",200,"Akvarium");
+		
+		
+		Ryby ryby;
+		ryby = kapr;
+		
+		
+		kapr.InfoO();
+		zralok.InfoO();
+		zralok.KolikPloutvi(); //ryby. muze oslovit jen metodu v interface Ryby
+		Systm.out.println(Ryby.MaxPloutvi);
+		
+		
+	}
+
+}

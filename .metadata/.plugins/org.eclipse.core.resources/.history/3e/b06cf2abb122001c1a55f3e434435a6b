@@ -1,0 +1,41 @@
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.Random;
+
+
+public class training {
+	
+	
+	public static void main(String[] args) {
+		
+System.out.println("Ahoj");
+		
+		int [] pole = {5,6,8,9,1};
+		int [] polex = new int [pole.length];
+		
+		String [] pole2 = {"Jarek", "Petr", "Adnrea"};
+		
+		
+		for (int i = 0; i < polex .length; i++) {
+			
+			
+			
+					for (int b = 0; b < pole.length; b++)  {
+				
+							int min =0;
+								if (pole[b] > min) {
+										min = pole[b];
+										polex[i] = min;
+									}
+										}
+			
+		}
+		
+		for (int policko:polex) {
+			System.out.println(policko);
+			
+		}
+	
+	}
+	
+}

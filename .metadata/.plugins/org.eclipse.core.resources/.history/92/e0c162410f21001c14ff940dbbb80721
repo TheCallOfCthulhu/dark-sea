@@ -1,0 +1,13 @@
+
+public class Panos {
+	
+	int cislo;
+
+	public Panos(int cislo) {
+		super();
+		this.cislo = cislo;
+	}
+	
+	
+
+}

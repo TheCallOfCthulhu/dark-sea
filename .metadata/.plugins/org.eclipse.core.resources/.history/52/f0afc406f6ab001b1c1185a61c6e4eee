@@ -1,0 +1,18 @@
+import java.util.List;
+
+public class StreamFuncionality {
+
+	public static void main(String[] args) {
+		
+		
+		List <Integer> cisla = List.of(25,1,435,435,45);
+		
+		cisla.stream().sorted().forEach(element -> System.out.println(element));
+		System.out.println("\n");
+		List <String> ovoce = List.of("Jablko","Hruska","Meloun","Ciron");
+		ovoce.stream().map(hovno->hovno.toLowerCase()).forEach(element -> System.out.println(element));
+		
+
+	}
+
+}

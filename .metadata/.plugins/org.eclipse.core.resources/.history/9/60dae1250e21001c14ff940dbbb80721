@@ -1,0 +1,14 @@
+
+import static java.lang.System.out; //static import
+import static java.util.Collections.*; //static import
+
+public class Tips {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ String cokoliv = "cokoliv";
+ 
+ out.print(cokoliv); //uz se nemusi psat system. protoze je staticky naimprotovana
+	}
+
+}

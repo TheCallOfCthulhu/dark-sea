@@ -1,0 +1,22 @@
+package zoo.zlin;
+
+public interface Ryby {
+
+	
+	int MaxPloutvi = 8;
+	String ErrorMSG = ("Nemuze mit tolik ploutvi");
+	
+	public void KolikPloutvi();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,21 @@
+package zoo.zlin;
+
+public interface Ryby {
+
+	
+	
+	
+	public void KolikPloutvi();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,24 @@
+package zoo.zlin;
+
+public interface Ryby {
+
+	
+	int MaxPloutvi = 8; //neni variable ale constanta - nelze zmenit
+	String ErrorMSG = ("Nemuze mit tolik ploutvi"); //neni variable ale constanta - nelze zmenit
+	
+	public void KolikPloutvi(); //abstraktni metoda
+	
+	default void KolikJeMaxPLoutvi () { //pouze default metoda muze mit body v interface
+		System.out.println(MaxPloutvi);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
