@@ -10,9 +10,7 @@ public class TelSeznam {
 
 	public static void main(String[] args) throws IOException {
 
- //github commit test
-		
-		
+
 		String cesta = "C:\\Users\\surovjar\\Desktop\\telseznam.txt";
 		String telefon = "5123456789";
 		
