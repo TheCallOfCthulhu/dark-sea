@@ -1,0 +1,10 @@
+package exceptionolis;
+
+public class Vyjmulky {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,9 @@
+
+public class Person {
+String name;
+
+
+void jmenuju () {
+	System.out.println(name);
+}
+}

@@ -1,0 +1,22 @@
+package exceptionolis;
+
+public class Vyjmulky {
+
+	public static void main(String[] args) {
+
+
+	int a = 5, b= 0;
+	
+	secti(a, b);
+		
+		
+
+	}
+
+	private static void secti(int a, int b) {
+		int c = a/b;
+		System.out.println(c);
+		
+	}
+
+}

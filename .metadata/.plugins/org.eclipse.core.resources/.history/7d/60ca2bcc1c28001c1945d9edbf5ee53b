@@ -1,0 +1,28 @@
+package exceptionolis;
+
+public class Vyjmulky {
+
+	public static void main(String[] args) throws Exception {
+
+
+	int a = 5, b= 0;
+	System.out.println("zacatek programu");
+	secti(a, b);
+	System.out.println("konec programu");
+		
+
+	}
+
+	private static void secti(int a, int b) throws Exception {
+		int c = a/b;
+		System.out.println(c);
+		throw new Exception();
+//		try {
+//		int c = a/b;
+//		System.out.println(c);
+//	} catch (Exception e)
+//	      { e.printStackTrace();
+//		}
+	}
+
+}

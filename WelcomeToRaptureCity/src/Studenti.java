@@ -1,5 +1,5 @@
 
-public class Studenti {
+public class Studenti extends Person{
 	
 	String jmeno;
 	int [] znamky;

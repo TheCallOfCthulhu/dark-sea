@@ -1,0 +1,10 @@
+
+public class Person {
+String name;
+static int cislo =5;
+
+
+void jmenuju () {
+	System.out.println(name);
+}
+}
