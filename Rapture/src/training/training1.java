@@ -9,7 +9,7 @@ public class training1 {
 
 
 		Scanner sc=new Scanner(System.in);
-        System.out.println("================================");
+        System.out.println("=================HOHOOO===============");
         for(int i=0;i<3;i++)
         {
             String s1=sc.next();

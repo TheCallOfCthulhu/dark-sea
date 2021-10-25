@@ -1,49 +1,80 @@
-
+import java.util.Scanner;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 
 import java.util.Random;
 
 
+ class Ahoj {
+	
+}
+
+
 public class training {
 		
-
+static int i;
 	
 	public static void main(String[] args) {
-
-		Person adam = new Person ();
-		Person pavel = new Studenti ();
-		
-		Studentik rosta = new Studentik ();
-		
-pavel.		
 		
 		
-		System.out.println(adam);
 		
-//		int a = 10, b =20;
+		
+		
+		
+		
+		
+		
+		
+		
+		int b;
+		
+		ArrayList<Auto> al = new ArrayList<> ();
+		Auto person= new Auto ("Honda","ccc");
+	//	Auto person= new Auto ("Honda","ccc");
+		
+		b = 5+4;
+		
+		person = new Auto ("Honda","ccc");
+		System.out.println(person);
+		person = new Auto ("Honda","ccc");
+		System.out.println(person);
+		
+		for (int i = 0; i <10; i++) {
+		person = new Auto ("Honda","ccc");
+		person = new Auto ("Honda","ccc");
+		al.add(person);
+	
+		}
+		
+		
+	
+//		al.add(new Auto ("Honda","X58RD"));
+//		al.add(new Auto ("Mercedes","X58RD"));
+//		al.add(new Auto ("Ferari","X58RD"));
+//		al.add(new Auto ("Tozota","X58RD"));
+//		al.add(new Auto ("Skoda","X58RD"));
+		
+		
+//		for (Auto car : al) {
+//			System.out.println(car.jmeno);
+//		}
 //		
-//		int c = a = b;
-//		System.out.println(c);
+//		
+//		System.out.println(8>5 ? "pravda" : "lez");
+//			
+//		}
 		
 
-		Scanner sc = new Scanner (System.in);
+	//	System.out.println(al.get(0));
+	//	System.out.println(al.get(1));
+
 		
-	String str = "Jarek øíká: Sejmi jednorožce";
-	
-System.out.println("Jarek øíká: Sejmi jednorožce");
-
-//int x = sc.nextInt();
-
-
-
-	//System.out.println(c);
-	System.out.println(str.codePointAt(10)); 		//kod unicode na pozici 10 = 111
-	System.out.println(str.codePointBefore(10));	//kod unicode pred pozici 10 = 225
-	
-	char t = 111;
-	System.out.println(t);
-	
+		
+		
+		
 	}
-}
+	}
+

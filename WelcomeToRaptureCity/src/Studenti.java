@@ -9,6 +9,10 @@ public class Studenti extends Person{
 		this.speed = 5;
 	}
 	
+	public void poly () {
+		System.out.println("ja jsem student");
+	}
+	
 	
 	public Studenti(String jmeno, int[] znamky) {
 		super();

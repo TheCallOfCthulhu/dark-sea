@@ -77,7 +77,7 @@
 		<item key="patterns" value="*"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item key="pageIndex" value="3"/>
+		<item key="pageIndex" value="2"/>
 	</section>
 	<section name="SourceActionDialog.methods">
 		<item key="VisibilityModifier" value="1"/>
@@ -115,7 +115,7 @@
 		<item key="OmitCallToSuper" value="false"/>
 	</section>
 	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
-		<item key="DIALOG_X_ORIGIN" value="958"/>
+		<item key="DIALOG_X_ORIGIN" value="637"/>
 		<item key="DIALOG_Y_ORIGIN" value="48"/>
 		<item key="DIALOG_WIDTH" value="678"/>
 		<item key="DIALOG_HEIGHT" value="869"/>

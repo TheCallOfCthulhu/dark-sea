@@ -1,7 +1,0 @@
-package exceptionolis;
-
-public class VlastniEx extends Exception {
-public VlastniEx() {
-	System.out.println("Masto spatne VOLE");
-}
-}
