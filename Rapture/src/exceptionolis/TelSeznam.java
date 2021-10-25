@@ -18,9 +18,10 @@ public class TelSeznam {
 		
 		File souborSeznam = new File (cesta);
 
-		FileWriter fw;
+		
 		
 		try {
+			FileWriter fw;
 			fw = new FileWriter (souborSeznam);
 			fw.write(telefon);
 			fw.close();
